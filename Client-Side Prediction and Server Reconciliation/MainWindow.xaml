@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Client_Side_Prediction_and_Server_Reconciliation"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="1011" KeyDown="Window_KeyDown" KeyUp="Window_KeyUp">
+        Title="MainWindow" Height="450" Width="1011">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition/>
@@ -17,7 +17,7 @@
                 <TextBlock >Player Blue</TextBlock>
                 <StackPanel Orientation="Horizontal">
                     <TextBlock >Lag=</TextBlock>
-                    <TextBox TextWrapping="Wrap" Text="250" VerticalAlignment="Top" Width="66" TextChanged="TextBox_TextChanged"/>
+                    <TextBox TextWrapping="Wrap" Text="250" VerticalAlignment="Top" Width="66"/>
                     <TextBlock  TextWrapping="Wrap" Text="ms" VerticalAlignment="Top"/>
                     <CheckBox>Prediction</CheckBox>
                     <CheckBox>Reconciliation</CheckBox>
@@ -25,11 +25,11 @@
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
                     <TextBlock >PlayeBlue</TextBlock>
-                    <Slider Width="800"/>
+                    <Slider x:Name="s11" Width="800" Minimum="-50" Maximum="50"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
                     <TextBlock >PlayeRed</TextBlock>
-                    <Slider Width="800"/>
+                    <Slider x:Name="s12" Width="800" Minimum="-50" Maximum="50"/>
                 </StackPanel>
             </StackPanel>
         </Grid>
@@ -38,7 +38,7 @@
                 <TextBlock >Server</TextBlock>
                 <StackPanel Orientation="Horizontal">
                     <TextBlock >Update</TextBlock>
-                    <TextBox TextWrapping="Wrap" Text="250" VerticalAlignment="Top" Width="66" TextChanged="TextBox_TextChanged"/>
+                    <TextBox TextWrapping="Wrap" Text="250" VerticalAlignment="Top" Width="66"/>
                     <TextBlock  TextWrapping="Wrap" Text="times per second" VerticalAlignment="Top"/>
                     <CheckBox>Prediction</CheckBox>
                     <CheckBox>Reconciliation</CheckBox>
@@ -46,11 +46,11 @@
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
                     <TextBlock >PlayerBlue</TextBlock>
-                    <Slider Width="800" Minimum="-50" Maximum="50"/>
+                    <Slider x:Name="s21" Width="800" Minimum="-50" Maximum="50"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
                     <TextBlock >PlayerRed</TextBlock>
-                    <Slider Width="800" Minimum="-50" Maximum="50"/>
+                    <Slider x:Name="s22" Width="800" Minimum="-50" Maximum="50"/>
                 </StackPanel>
             </StackPanel>
         </Grid>
@@ -59,7 +59,7 @@
                 <TextBlock >Player Red</TextBlock>
                 <StackPanel Orientation="Horizontal">
                     <TextBlock >Lag=</TextBlock>
-                    <TextBox TextWrapping="Wrap" Text="250" VerticalAlignment="Top" Width="66" TextChanged="TextBox_TextChanged"/>
+                    <TextBox TextWrapping="Wrap" Text="250" VerticalAlignment="Top" Width="66"/>
                     <TextBlock  TextWrapping="Wrap" Text="ms" VerticalAlignment="Top"/>
                     <CheckBox>Prediction</CheckBox>
                     <CheckBox>Reconciliation</CheckBox>
@@ -67,11 +67,11 @@
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
                     <TextBlock >PlayeBlue</TextBlock>
-                    <Slider Width="800"/>
+                    <Slider x:Name="s31" Width="800" Minimum="-50" Maximum="50"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
                     <TextBlock >PlayeRed</TextBlock>
-                    <Slider Width="800"/>
+                    <Slider x:Name="s32" Width="800" Minimum="-50" Maximum="50"/>
                 </StackPanel>
             </StackPanel>
         </Grid>
