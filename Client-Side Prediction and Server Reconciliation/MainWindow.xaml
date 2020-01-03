@@ -1,0 +1,79 @@
+﻿<Window x:Class="Client_Side_Prediction_and_Server_Reconciliation.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Client_Side_Prediction_and_Server_Reconciliation"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="1011" KeyDown="Window_KeyDown" KeyUp="Window_KeyUp">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <StackPanel>
+                <TextBlock >Player Blue</TextBlock>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock >Lag=</TextBlock>
+                    <TextBox TextWrapping="Wrap" Text="250" VerticalAlignment="Top" Width="66" TextChanged="TextBox_TextChanged"/>
+                    <TextBlock  TextWrapping="Wrap" Text="ms" VerticalAlignment="Top"/>
+                    <CheckBox>Prediction</CheckBox>
+                    <CheckBox>Reconciliation</CheckBox>
+                    <CheckBox>Interpolation</CheckBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock >PlayeBlue</TextBlock>
+                    <Slider Width="800"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock >PlayeRed</TextBlock>
+                    <Slider Width="800"/>
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Row="1">
+            <StackPanel>
+                <TextBlock >Server</TextBlock>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock >Update</TextBlock>
+                    <TextBox TextWrapping="Wrap" Text="250" VerticalAlignment="Top" Width="66" TextChanged="TextBox_TextChanged"/>
+                    <TextBlock  TextWrapping="Wrap" Text="times per second" VerticalAlignment="Top"/>
+                    <CheckBox>Prediction</CheckBox>
+                    <CheckBox>Reconciliation</CheckBox>
+                    <CheckBox>Interpolation</CheckBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock >PlayerBlue</TextBlock>
+                    <Slider Width="800" Minimum="-50" Maximum="50"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock >PlayerRed</TextBlock>
+                    <Slider Width="800" Minimum="-50" Maximum="50"/>
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Row="2">
+            <StackPanel>
+                <TextBlock >Player Red</TextBlock>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock >Lag=</TextBlock>
+                    <TextBox TextWrapping="Wrap" Text="250" VerticalAlignment="Top" Width="66" TextChanged="TextBox_TextChanged"/>
+                    <TextBlock  TextWrapping="Wrap" Text="ms" VerticalAlignment="Top"/>
+                    <CheckBox>Prediction</CheckBox>
+                    <CheckBox>Reconciliation</CheckBox>
+                    <CheckBox>Interpolation</CheckBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock >PlayeBlue</TextBlock>
+                    <Slider Width="800"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock >PlayeRed</TextBlock>
+                    <Slider Width="800"/>
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>
