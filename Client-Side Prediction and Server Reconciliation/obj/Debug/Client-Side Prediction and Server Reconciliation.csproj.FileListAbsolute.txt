@@ -11,3 +11,4 @@ C:\Users\Xuan\Documents\GitHub\Client-Side-Prediction-and-Server-Reconciliation\
 C:\Users\Xuan\Documents\GitHub\Client-Side-Prediction-and-Server-Reconciliation\Client-Side Prediction and Server Reconciliation\obj\Debug\Client-Side Prediction and Server Reconciliation.csproj.GenerateResource.cache
 C:\Users\Xuan\Documents\GitHub\Client-Side-Prediction-and-Server-Reconciliation\Client-Side Prediction and Server Reconciliation\obj\Debug\Client-Side Prediction and Server Reconciliation.exe
 C:\Users\Xuan\Documents\GitHub\Client-Side-Prediction-and-Server-Reconciliation\Client-Side Prediction and Server Reconciliation\obj\Debug\Client-Side Prediction and Server Reconciliation.pdb
+C:\Users\Xuan\Documents\GitHub\Client-Side-Prediction-and-Server-Reconciliation\Client-Side Prediction and Server Reconciliation\obj\Debug\Client-Side Prediction and Server Reconciliation.csprojAssemblyReference.cache

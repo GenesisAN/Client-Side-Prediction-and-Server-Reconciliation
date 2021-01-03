@@ -542,6 +542,7 @@ namespace Client_Side_Prediction_and_Server_Reconciliation
 
                     // Update the state of the entity, based on its input.
                     // We just ignore inputs that don't look valid; this is what prevents clients from cheating.
+                    Console.WriteLine(input.press_time.TotalMilliseconds);
                     if (true || validateInput(input))
                     {
                         int id = input.entity_id;
@@ -576,6 +577,28 @@ namespace Client_Side_Prediction_and_Server_Reconciliation
 
         }
 
+        private void Window_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            this.Focus();
 
+        }
+
+        private void TextBox_PreviewKeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.A || e.Key == Key.D)
+            {
+                e.Handled = true;
+                MainWindow_KeyUp(sender, e);
+            }
+        }
+
+        private void TextBox_PreviewKeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.A || e.Key == Key.D)
+            {
+                e.Handled = true;
+                MainWindow_KeyDown(sender, e);
+            }
+        }
     }
 }

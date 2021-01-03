@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Client_Side_Prediction_and_Server_Reconciliation"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="1011">
+        Title="MainWindow" Height="450" Width="1011" PreviewMouseDown="Window_MouseDown">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition/>
@@ -17,7 +17,7 @@
                 <TextBlock >Player Blue</TextBlock>
                 <StackPanel Orientation="Horizontal">
                     <TextBlock >Lag=</TextBlock>
-                    <TextBox TextWrapping="Wrap" Text="250" VerticalAlignment="Top" Width="66"/>
+                    <TextBox TextWrapping="Wrap" Text="250" VerticalAlignment="Top" Width="66" PreviewKeyUp="TextBox_PreviewKeyUp" PreviewKeyDown="TextBox_PreviewKeyDown"/>
                     <TextBlock  TextWrapping="Wrap" Text="ms" VerticalAlignment="Top"/>
                     <CheckBox>Prediction</CheckBox>
                     <CheckBox>Reconciliation</CheckBox>
